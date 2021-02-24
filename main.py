@@ -1,3 +1,5 @@
+from P3_input import Quadratic
+
 class Advent:
   def __init__(self):
     self.introductionMessage = "Hello Prospective Advent Industries Programming Interns! Attached in this same folder/directory are additional files that should help you with your programming tasks!"
@@ -5,4 +7,4 @@ class Advent:
     return self.introductionMessage
 if __name__ == "__main__":
   firstInstanceObject = Advent()
-  print(firstInstanceObject)
+  print(firstInstanceObject, "\n")
