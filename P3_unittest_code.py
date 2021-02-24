@@ -6,7 +6,7 @@ import unittest
 # you should create a class object and call this function within each of the test case
 functionInstanceObject = Quadratic(1, 5, 6)
 functionMethod = functionInstanceObject.calculateQuadratic()
-
+# Changing something
 '''
 Three UNIT TEST CASES TO TESTT!!!
 Test One: Test if 'a' value is equal to 
