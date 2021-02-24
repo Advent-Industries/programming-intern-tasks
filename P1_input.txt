@@ -1,18 +1,21 @@
-00B1 100 080 P PD = 
-A0B9 050 P MD = 
-89C0 HIT S HF = 
-AB41 1 B LB = 
-0001 60F D WT =
+00B1 100 080 P PD =
+A0B9 050     P MD =
+89C0 HIT     S HF =
+AB41 1       B LB =
+0001 60F     D WT =
+4DEF 1 1 0   B LD =
+54E3 100m    S DD =
+8B7A 054     D SD =
+A65F 002kn   S VD =
+E6D5 050     P BD =
 
-4DEF 1 1 0 B LD = 
-54E3 100m S DD =
-8B7A 054 D SD =
-A65F 002kn S VD =
-E6D5 050 P BD =
 
+00B1100080PPD=A0B9050PMD=89C0HITSHF=AB411BLB=000160FDWT=4DEF110BLD=54E3100mSDD=8B7A054DSD=A65F002knSVD=E6D5050PBD=
+
+STOP READING THE FILE AT THIS POINT ~ ~ BELOW ARE INSTRUCTIONS
 
 NOTES:
-Intro Tokens ~> Empirical Data Sequences
+Identification Tokens ~> Empirical Data Sequences
 00B1 ~> Intro Token signifying data from two propellor sources (left and right). Represented by a set of two three digit percentages (000 -> 100) for 0% to 100%. 
   Formatting [Percentage for Propellor Left] [Percentage for Propellor Right]
 
@@ -37,13 +40,13 @@ AB41 ~> Intro Token signifying if a light button has been pressed.
 54E3 ~> Intro Token signifying data from depth sensor as string value 
   Format [string] ~> (distance from seahunter in meters)m
 
-8B7A ~> Intro Token signyifying data from sonar in degrees. Represented by a 3 digit number from 000 to 180 degrees
+8B7A ~> Intro Token signifying data from sonar in degrees. Represented by a 3 digit number from 000 to 180 degrees
   Format[3 digit number]
 
-A65F ~> Intro Token signyifying data from speedometer in the seahunter
+A65F ~> Intro Token signifying data from speedometer in the seahunter
   Format [int] ~ (speed)kn
 
-E6D5 ~>Intro Token signyifying data from the battery in percentange units
+E6D5 ~>Intro Token signifying data from the battery in percentange units
   Format [3 digit Percentage left in the battery]
 
 Termination Tokens Terminology
