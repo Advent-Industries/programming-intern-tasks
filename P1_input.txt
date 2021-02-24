@@ -5,10 +5,10 @@ AB41 1 B LB =
 0001 60F D WT =
 
 4DEF 1 1 0 B LD = 
-54G3 100m S DD =
+54E3 100m S DD =
 8B7A 054 D SD =
 A65F 002kn S VD =
-G6D5 =
+E6D5 050 P BD =
 
 
 NOTES:
@@ -34,7 +34,7 @@ AB41 ~> Intro Token signifying if a light button has been pressed.
 4DEF ~> Intro Token signifying data from THREE limit swtiches as boolean values (0 or 1)\
   Format [Binary Digit] [Binary Digit] [Binary Digit]
 
-54G3 ~> Intro Token signifying data from depth sensor as string value 
+54E3 ~> Intro Token signifying data from depth sensor as string value 
   Format [string] ~> (distance from seahunter in meters)m
 
 8B7A ~> Intro Token signyifying data from sonar in degrees. Represented by a 3 digit number from 000 to 180 degrees
@@ -43,8 +43,8 @@ AB41 ~> Intro Token signifying if a light button has been pressed.
 A65F ~> Intro Token signyifying data from speedometer in the seahunter
   Format [int] ~ (speed)kn
 
-G6D5 ~>Intro Token signyifying data from gyroscope 
-  Format
+E6D5 ~>Intro Token signyifying data from the battery in percentange units
+  Format [3 digit Percentage left in the battery]
 
 Termination Tokens Terminology
 PD -> Propellor Data
@@ -56,16 +56,13 @@ LD -> Limit Switch Data
 DD -> Depth Data
 SD -> Sonar Data
 VD -> Velocity Data
+BD -> Battery Data 
 
 Data Types
 P -> Percentage
 S -> String
 B -> Boolean Value
 D -> Degrees
-M -> 
 = ~> Terminates the data sequence
 
 AI Programming Mission Statement ~> The Advent Industries Programming subteam is dedicated to the promotion of individual curiosity and team-based collaboration. We are committed to the exploration of cutting-edge, industry-level software, practices, and standards. Through innovation, resilience, and technical excellence, we will strive to craft comphrehensive software solutions.  
-
-testing sites
-material research

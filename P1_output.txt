@@ -1,0 +1,59 @@
+00B1 100 080 P PD = ~> 
+A0B9 050 P MD = ~> 
+89C0 HIT S HF = ~> 
+AB41 1 B LB = ~> 
+0001 60F D WT = ~> 
+
+4DEF 1 1 0 B LD = ~> 
+54E3 100m S DD = ~> 
+8B7A 054 D SD = ~> 
+A65F 002kn S VD = ~> 
+E6D5 050 P BD = ~> 
+
+Your program should output two sets of information
+1. A summary of the current status of the system (before encrypted transmissions)
+2. Individual Updates Made to the System
+3. An updated summary of the current status of the system
+
+In your programming task, you have to initialize your submersible system to certain values for certain sensors and motors. You will then take encrypted transmissions from your input file and update the system if needed in certain areas. 
+
+~ ~ ~ ~
+
+SUBMERSIBLE SYSTEM INFORMATION, SENSORS, and SIGNALS 
+
+~ ~ ~ 
+
+Analog Information of the Submersible System 
+1. Propellors (left and right) (2, initialized to 000 and 099(0% and 99% thrust))
+2. Motors (left and right) (2, initialized to 069 and 050(69% and 50% power))
+3. pH sensor (2, intialized to 7pH (7 pH))
+4. Speedometer (1, initialized to 0kn (0 knots)) [0 knots (nautical miles per hour)]
+5. Water Temperature Sensor (1, initialized to 89C (89 Celsius))
+6. Mast Configuration Sensor (1, initialized to 76D (76 Degrees))
+7. Pressure Sensor (1, initialized to 1 bar)
+8. Sonar sensor (1, intitialized to 000 (0 degrees))
+9. Battery (1, initialized to 100(100 percent))
+10. Depth sensors (1, intialized to 30m(30 meters))
+11. Light Button (1, initialized to 0(off position))
+12. Video Transmission Quality (initialized to the integer '720'(video quality 720p))
+
+Digital Signals of the Submersible System
+1. RF Master Transmission Signal (initialized to the integer '1'(signal exists))
+2. Limit Switches (3, initialized to '0' '0' '0'(all are not pressed))
+3. 'Hit or Miss' Signal on the enemy submersible (initialized to string value 'MIS' (miss))
+4. Video Transmission Signal (intialized to the boolean value '1'(signal exists))
+
+
+Output 1 Formatting:
+(Example -->  89C0 HIT S HF = 54E3 100m S DD =) <-- Current State of System
+The 'Hit or Miss' signal on the enemy submersible is currently initialized to the string value 'MIS'. The depth sensor shows us that the submersible is 100 meters away from the bottom of the water environment. 
+FURTHER INFORMATION: The first output summary should include statements like this for all 16 components of the system in a summary form. 
+
+Output 2 Formatting: 
+(Example for encrypted transmissions updates --> 54E3 50m S DD = 89C0 HIT S HF =)
+UDPATE: The depth sensors now shows that the submersible is now 50 meters away from the bottom of the water environment.
+UPDATE: We have now HIT the enemy submersible!
+FURTHER INFORMATION: Each update to the system (there are 10 because 10 encrypted transmissions) should start with 'UPDATE:' and each new update should have their own new line. 
+
+Output 3 Formatting:
+(Example --> 54E3 50m S DD = 89C0 HIT S HF =) <-- Updated State of the System
