@@ -9,11 +9,11 @@ functionMethod = functionInstanceObject.calculateQuadratic()
 # Changing something
 '''
 Three UNIT TEST CASES TO TESTT!!!
-Test One: Test if 'a' value is equal to 
+Test One: Test if 'a' value is of integer type using self.assertTrue and type(int)
 
-Test Two: 
+Test Two: Test if 'd' is equal to the actual discriminant using using self.assertEquals
 
-Test Three: 
+Test Three: Test if 'solutions' is equal to the string 'The solutions are (-3+0j) and (-2+0j)' using self.assertEqual
 
 '''
 class TestStringMethods(unittest.TestCase):
@@ -28,7 +28,7 @@ class TestStringMethods(unittest.TestCase):
     functionMethod = functionInstanceObjectTwo.calculateQuadratic()
 
   def test_case_three(self):
-    functionInstanceObjectThree = Quadratic(24, 5, 9)
+    functionInstanceObjectThree = Quadratic(1, 5, 6)
     functionMethod = functionInstanceObjectThree.calculateQuadratic()
 
 
