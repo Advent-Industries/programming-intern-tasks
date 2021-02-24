@@ -14,7 +14,11 @@ class Quadratic:
     inputNumber = int(input())
 
     # calculate the discriminant #
+
     self.d = (self.b**2) - (4*self.a*self.c)
+    self.d = (self.b*2)  -  (4*self.a*self.c)
+    self.d = (self.b**2) - (4**self.a*self.c)
+    self.d = (self.b*2)  -  (4*self.a**self.c)
 
     # find two solutions #
     sol1 = (-self.b-cmath.sqrt(self.d))/(2*self.a)
@@ -22,8 +26,8 @@ class Quadratic:
 
     # dictionary of values
     dictPrintOptions = {
-      1: self.a, # prints out a coeff
-      2: self.b, # prints out b coeff
+      1: self.b, # prints out a coeff
+      2: self.a, # prints out b coeff
       3: self.c, # prints out c coeff
       4: self.d, # prints out discr.
       5: 'The solutions are {0} and {1}'.format(sol1,sol2) # prints out solutions

@@ -12,14 +12,17 @@ class Advent:
   def softwareTaskTwo(self):
     # Use Online Research!  
     # Modify Online solutions, openCV cannot be used in repl.it
+    # Write a seperate python file to solve this problem
     pass
   def softwareTaskThree(self):
-    # functionTestInstance = TestStringMethods()
     unittest.main()
   def __str__(self):
     return self.introductionMessage
 if __name__ == "__main__":
   instance = Advent()
   print(instance, "\n")
-  
+
+  # start editing code here 
+  # Comment out the task you are not testing
+  instance.softwareTaskOne()
   instance.softwareTaskThree()
