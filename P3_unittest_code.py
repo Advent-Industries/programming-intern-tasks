@@ -4,8 +4,12 @@ import unittest
 # How to call the quadratic function from the other file
 # Use this information to create unit tests for the unit test software problem\
 # you should create a class object and call this function within each of the test case
-functionInstanceObject = Quadratic(1, 5, 6)
-functionMethod = functionInstanceObject.calculateQuadratic()
+
+# # # # # # 
+# functionInstanceObject = Quadratic(1, 5, 6)
+# output = functionInstanceObject.calculateQuadratic()
+
+# # # # # # 
 # Changing something
 '''
 Three UNIT TEST CASES TO TESTT!!!
@@ -19,16 +23,21 @@ Test Three: Test if 'solutions' is equal to the string 'The solutions are (-3+0j
 class TestStringMethods(unittest.TestCase):
   def test_case_one(self):
     functionInstanceObjectOne = Quadratic(1, 5, 6)
-    functionMethod = functionInstanceObjectOne.calculateQuadratic()
+    output = functionInstanceObjectOne.calculateQuadratic()
+    self.assertEqual(output,'The solutions are (-3+0j) and (-2+0j)')
     # include code here to test whether the function output
     # use assert statements
 
   def test_case_two(self):
     functionInstanceObjectTwo = Quadratic(4, 2, 8)
-    functionMethod = functionInstanceObjectTwo.calculateQuadratic()
+    output = functionInstanceObjectTwo.calculateQuadratic()
+    # include code here to test whether the function output
+    # use assert statements
 
   def test_case_three(self):
     functionInstanceObjectThree = Quadratic(1, 5, 6)
-    functionMethod = functionInstanceObjectThree.calculateQuadratic()
+    output = functionInstanceObjectThree.calculateQuadratic()
+    # include code here to test whether the function output
+    # use assert statements
 
 

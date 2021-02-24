@@ -1,4 +1,6 @@
 from P3_input import Quadratic
+from P3_unittest_code import TestStringMethods
+import unittest
 
 class Advent:
   def __init__(self):
@@ -8,3 +10,7 @@ class Advent:
 if __name__ == "__main__":
   firstInstanceObject = Advent()
   print(firstInstanceObject, "\n")
+
+  functionInstance = TestStringMethods()
+  functionInstance.test_case_one()
+  unittest.main()

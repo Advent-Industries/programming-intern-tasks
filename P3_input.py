@@ -8,51 +8,28 @@ class Quadratic:
     self.d = 0
 
   def calculateQuadratic(self):
-    
+    # Taking in user Input #
     print("What output would you like to have? (Option 1: 'A', Option 2: 'B', Option 3: 'C', Option 4: 'Discriminant', Option 5: 'Solutions' ~> Please Enter a number")
 
     inputNumber = int(input())
 
-    # calculate the discriminant
+    # calculate the discriminant #
     self.d = (self.b**2) - (4*self.a*self.c)
 
-    # find two solutions
+    # find two solutions #
     sol1 = (-self.b-cmath.sqrt(self.d))/(2*self.a)
     sol2 = (-self.b+cmath.sqrt(self.d))/(2*self.a)
 
+    # dictionary of values
     dictPrintOptions = {
-      1: self.a,
-      2: self.b,
-      3: self.c,
-      4: self.d,
-      5: 'The solutions are {0} and {1}'.format(sol1,sol2)
+      1: self.a, # prints out a coeff
+      2: self.b, # prints out b coeff
+      3: self.c, # prints out c coeff
+      4: self.d, # prints out discr.
+      5: 'The solutions are {0} and {1}'.format(sol1,sol2) # prints out solutions
     }
+    # Outputs to screen 
     print(dictPrintOptions.get(inputNumber, "Wrong Input Number"))
 
-    ''''
-    switch(inputNumber):
-      case 1:
-        return self.a
-        break
-
-      case 2:
-        return self.b
-        break
-
-      case 3:
-        return self.c
-        break
-
-      case 4:
-        return self.d
-        break
-        
-      case 5: 
-        # f'The solutions are {sol1} and {sol2}' 
-        print('The solutions are {0} and {1}'.format(sol1,sol2))
-        break
-
-
-if __name__ == "__P3_input__":
-  functionInstanceObject = Quadratic()
-'''
+    # returns to variable for storage
+    return dictPrintOptions.get(inputNumber, "Wrong Input Number")
