@@ -26,10 +26,10 @@ SUBMERSIBLE SYSTEM INFORMATION, SENSORS, and SIGNALS
 Analog Information of the Submersible System 
 1. Propellors (left and right) (2, initialized to 000 and 099(0% and 99% thrust))
 2. Motors (left and right) (2, initialized to 069 and 050(69% and 50% power))
-3. pH sensor (2, intialized to 7pH (7 pH))
+3. pH sensor (1, intialized to 7pH (7 pH))
 4. Speedometer (1, initialized to 0kn (0 knots)) [0 knots (nautical miles per hour)]
 5. Water Temperature Sensor (1, initialized to 89C (89 Celsius))
-6. Mast Configuration Sensor (1, initialized to 76D (76 Degrees))
+6. Mast Configuration Sensor (1, initialized to 76 (76 Degrees))
 7. Pressure Sensor (1, initialized to 1 bar)
 8. Sonar sensor (1, intitialized to 000 (0 degrees))
 9. Battery (1, initialized to 100(100 percent))
