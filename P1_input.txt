@@ -1,0 +1,41 @@
+00B1 100 080 P PD = 
+A0B9 050 P MD = 
+89C0 HIT S HF = 
+AB41 1 B LB = 
+0001 60F D WT =
+
+
+NOTES:
+Intro Tokens ~> Empirical Data Sequences
+00B1 ~> Intro Token signifying data from two propellor sources (left and right). Represented by a set of two three digit percentages (000 -> 100) for 0% to 100%. 
+  Formatting [Percentage for Propellor Left] [Percentage for Propellor Right]
+
+A0B8 ~> Intro Token signifying data from a single left motor. Represented by a single 3 digit percentage where 050 represents 50 percent.  
+  Formatting [Percentage for Right Motor]
+
+A0B9 ~> Intro Token signifying data from a single right motor. Represented by a single 3 digit percentage where 050 represents 50 percent.  
+  Formatting [Percentage for Right Motor]
+
+89C0 ~> Intro Token signifying a string signal to whether the enemy sea hunter has been hit. 
+  Format [string] ~> string can be MIS or HIT
+
+AB41 ~> Intro Token signifying if a light button has been pressed.
+  Format [int] ~> boolean signal can be 0 or 1
+
+0001 ~> Intro Token signifying data from a water temperature sensor in degrees (F or C)
+  Format[2 digit number + Letter(c or f)]
+
+
+Termination Tokens Terminology
+PD -> Propellor Data
+MD -> Motor Data
+HR -> Hit Flag Data
+LB -> Light Button Data
+WT -> Water Temperature
+
+Data Types
+P -> Percentage
+S -> String
+B -> Boolean Value
+D -> Degrees
+
