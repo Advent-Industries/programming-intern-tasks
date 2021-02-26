@@ -1,3 +1,7 @@
+This text file is just full of information for software task one. It is NOT your input text file for the software tast. That input file is named 'Input_Transmission.txt'
+
+Below is a copy of the encrypted transmissions (in a readable format with spaces) 
+
 00B1 100 080 P PD =
 A0B9 050     P MD =
 89C0 HIT     S HF =
@@ -10,12 +14,14 @@ A65F 002kn   S VD =
 E6D5 050     P BD =
 
 
+Below is an example of the encrypted transmission from the other text file. 
 00B1100080PPD=A0B9050PMD=89C0HITSHF=AB411BLB=000160FDWT=4DEF110BLD=54E3100mSDD=8B7A054DSD=A65F002knSVD=E6D5050PBD=
 
-STOP READING THE FILE AT THIS POINT ~ ~ BELOW ARE INSTRUCTIONS
+ ~ ~ BELOW ARE INSTRUCTIONS for the Task ~ ~ 
 
-NOTES:
+NOTES and REPRESENTATIONS:
 Identification Tokens ~> Empirical Data Sequences
+
 00B1 ~> Intro Token signifying data from two propellor sources (left and right). Represented by a set of two three digit percentages (000 -> 100) for 0% to 100%. 
   Formatting [Percentage for Propellor Left] [Percentage for Propellor Right]
 
@@ -67,5 +73,9 @@ S -> String
 B -> Boolean Value
 D -> Degrees
 = ~> Terminates the data sequence
+
+SEE P1_input.txt FOR MORE INFORMATION REGARDING OUTPUT FOR THIS SOFTWARE TASK ONE.
+
+v ~ Advent Industries Programming Mission Statement ~ v
 
 AI Programming Mission Statement ~> The Advent Industries Programming subteam is dedicated to the promotion of individual curiosity and team-based collaboration. We are committed to the exploration of cutting-edge, industry-level software, practices, and standards. Through innovation, resilience, and technical excellence, we will strive to craft comphrehensive software solutions.  

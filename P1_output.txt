@@ -1,21 +1,9 @@
-00B1 100 080 P PD = ~> 
-A0B9 050 P MD = ~> 
-89C0 HIT S HF = ~> 
-AB41 1 B LB = ~> 
-0001 60F D WT = ~> 
-
-4DEF 1 1 0 B LD = ~> 
-54E3 100m S DD = ~> 
-8B7A 054 D SD = ~> 
-A65F 002kn S VD = ~> 
-E6D5 050 P BD = ~> 
-
 Your program should output two sets of information
 1. A summary of the current status of the system (before encrypted transmissions)
 2. Individual Updates Made to the System
 3. An updated summary of the current status of the system
 
-In your programming task, you have to initialize your submersible system to certain values for certain sensors and motors. You will then take encrypted transmissions from your input file and update the system if needed in certain areas. 
+In your programming task, you have to initialize your submersible system to certain values for certain sensors and motors. You will then take encrypted transmissions from your input file (Input_Transmission.txt) and update the system if needed in certain areas. 
 
 ~ ~ ~ ~
 
@@ -43,17 +31,31 @@ Digital Signals of the Submersible System
 3. 'Hit or Miss' Signal on the enemy submersible (initialized to string value 'MIS' (miss))
 4. Video Transmission Signal (intialized to the boolean value '1'(signal exists))
 
+~ ~ ~
 
 Output 1 Formatting:
 (Example -->  89C0 HIT S HF = 54E3 100m S DD =) <-- Current State of System
-The 'Hit or Miss' signal on the enemy submersible is currently initialized to the string value 'MIS'. The depth sensor shows us that the submersible is 100 meters away from the bottom of the water environment. 
-FURTHER INFORMATION: The first output summary should include statements like this for all 16 components of the system in a summary form. 
+(Example Output Summary) The 'Hit or Miss' signal on the enemy submersible is currently initialized to the string value 'MIS'. The depth sensor shows us that the submersible is 100 meters away from the bottom of the water environment. 
+
+[FURTHER INFORMATION OUTPUT 1: The first output summary should include statements like this for all 16 components of the system in a summary form.]
+
+~ ~ ~
 
 Output 2 Formatting: 
 (Example for encrypted transmissions updates --> 54E3 50m S DD = 89C0 HIT S HF =)
+(Example UPDATE Summary)
 UDPATE: The depth sensors now shows that the submersible is now 50 meters away from the bottom of the water environment.
 UPDATE: We have now HIT the enemy submersible!
-FURTHER INFORMATION: Each update to the system (there are 10 because 10 encrypted transmissions) should start with 'UPDATE:' and each new update should have their own new line. 
+
+[FURTHER INFORMATION OUTPUT 2: Each update to the system (there are 10 because 10 encrypted transmissions) should start with 'UPDATE:' and each new update should have their own new line. ]
+
+~ ~ ~
 
 Output 3 Formatting:
-(Example --> 54E3 50m S DD = 89C0 HIT S HF =) <-- Updated State of the System
+(Example --> 54E3 50m S DD = 89C0 HIT S HF =) <-- (Example Output Summary)
+Updated State of the System
+The 'Hit or Miss' signal on the enemy submersible is currently initialized to the string value 'HIT'. The depth sensor shows us that the submersible is 50 meters away from the bottom of the water environment.
+
+[FURTHER INFORMATION OUTPUT 3: The first output summary should include statements like this for all 16 components of the system in a summary form.]
+
+~ ~ ~ 
