@@ -14,11 +14,19 @@ class Quadratic:
     inputNumber = int(input())
 
     # calculate the discriminant #
+    if self.a > 3:
+      self.d = (self.b**2) - (4*self.a*self.c)
+    elif self.a <= 3:
+      self.d = (self.b*2)  -  (4*self.a*self.c)
+    else:
+      self.d = (self.b**2) - (4**self.a*self.c)
 
-    self.d = (self.b**2) - (4*self.a*self.c)
-    self.d = (self.b*2)  -  (4*self.a*self.c)
-    self.d = (self.b**2) - (4**self.a*self.c)
-    self.d = (self.b*2)  -  (4*self.a**self.c)
+    if self.b > 4:
+      self.d = (self.b**2) - (4**self.a*self.c)
+    elif self.b <= 4:
+      self.d = (self.b*2)  -  (4*self.a**self.c)
+    else: 
+      self.d = (self.b**2) - (4**self.a*self.c)
 
     # find two solutions #
     sol1 = (-self.b-cmath.sqrt(self.d))/(2*self.a)

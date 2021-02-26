@@ -3,7 +3,7 @@ Your program should output two sets of information
 2. Individual Updates Made to the System
 3. An updated summary of the current status of the system
 
-In your programming task, you have to initialize your submersible system to certain values for certain sensors and motors. You will then take encrypted transmissions from your input file (Input_Transmission.txt) and update the system if needed in certain areas. 
+In your programming task, you have to initialize your submersible system to certain values for certain sensors and motors. You will then read the encrypted transmissions from your input file (Input_Transmission.txt) and update the system if needed in certain areas. 
 
 ~ ~ ~ ~
 
